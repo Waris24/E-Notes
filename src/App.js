@@ -3,7 +3,7 @@ import Navbar from "./components/Navbar";
 import Home from "./components/Home";
 import About from "./components/About";
 import NoteState from "./context/notes/NoteState";
-import Alert from "./components/Alert";
+//import Alert from "./components/Alert";
 import Login from "./components/Login";
 import SignUp from "./components/SignUp";
 
@@ -13,7 +13,7 @@ function App() {
       <NoteState>
         <Router>
           <Navbar />
-          <Alert message="Alert" />
+          {/* <Alert message="Alert" /> */}
           <div className="container">
             <Routes>
               <Route path="/" element={<Home />} />
