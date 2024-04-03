@@ -37,6 +37,16 @@ const Navbar = () => {
             <li className="nav-item">
               <Link
                 className={`nav-link ${
+                  location.pathname === "/yournotes" ? "active" : ""
+                }`}
+                to="/yournotes"
+              >
+                Your notes
+              </Link>
+            </li>
+            <li className="nav-item">
+              <Link
+                className={`nav-link ${
                   location.pathname === "/about" ? "active" : ""
                 }`}
                 to="/about"
@@ -45,14 +55,14 @@ const Navbar = () => {
               </Link>
             </li>
           </ul>
-          <form className="d-flex">
+          {/* <form className="d-flex">
             <Link className="btn btn-primary mx-1" to="/login" role="button">
               Login
             </Link>
             <Link className="btn btn-primary mx-1" to="/signup" role="button">
               Signup
             </Link>
-          </form>
+          </form> */}
         </div>
       </div>
     </nav>

@@ -6,6 +6,7 @@ import NoteState from "./context/notes/NoteState";
 //import Alert from "./components/Alert";
 import Login from "./components/Login";
 import SignUp from "./components/SignUp";
+import Notes from "./components/Notes";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
           <div className="container">
             <Routes>
               <Route path="/" element={<Home />} />
+              <Route path="/yournotes" element={<Notes />} />
               <Route path="/about" element={<About />} />
               <Route path="/login" element={<Login />} />
               <Route path="/signup" element={<SignUp />} />
